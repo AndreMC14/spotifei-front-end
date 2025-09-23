@@ -3,7 +3,7 @@ import { MinhaBibliotecaComponent } from './components/minha-biblioteca/minha-bi
 
 export const routes: Routes = [
     {
-        path: "minhaBiblioteca",
+        path: "biblioteca",
         component: MinhaBibliotecaComponent
     }
 ];
