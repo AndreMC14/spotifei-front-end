@@ -1,5 +1,4 @@
-.div-principal
-{
+.div-principal {
     background-color: rgb(255, 214, 199);
     display: flex;
     height: 100vh;
@@ -8,32 +7,32 @@
     justify-content: flex-start;
     flex-direction: column;
 }
-.div-titulo
-{
+
+.div-titulo {
     display: flex;
     background-color: darkgoldenrod;
     width: 100%;
     border-radius: 1cap;
 }
-#Titulo
-{
+
+#Titulo {
     margin-left: 3vh;
 }
-.div-form-biblioteca
-{
+
+.div-form-biblioteca {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 2.5vh;
     gap: 0.3vh;
 }
-.div-butao-biblioteca
-{
+
+.art-butao-biblioteca {
     padding: 0.5vh;
     width: 80%;
 }
-.div-butao-biblioteca button
-{
+
+.art-butao-biblioteca button {
     background-color: rgba(253, 248, 247, 0.925);
     display: flex;
     flex-direction: row;
@@ -41,13 +40,19 @@
     border: none;
     width: 100%;
     height: 100%;
+    align-items: center;
 }
-.div-butao-adicionar
-{
+
+.butao-biblioteca {
+    width: 100%;
+    height: 100%;
+}
+
+.div-butao-adicionar {
     padding: 0.5vh;
 }
-.div-butao-adicionar button
-{
+
+.div-butao-adicionar button {
     height: 5vh;
     width: 5vh;
     background-color: rgba(253, 248, 247, 0.925);
@@ -55,4 +60,18 @@
     border: none;
     margin-right: 1vh;
 }
+.imagem-biblioteca
+{
+    height: 6vh;
+    width: 6vh;
+    border-radius: 100%;
+}
 
+.div-titulo-propriedades{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
