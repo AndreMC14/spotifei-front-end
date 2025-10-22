@@ -3,7 +3,9 @@
         <h1 id="Titulo">Sua Biblioteca</h1>
     </div>
         <main class = "form-biblioteca">
-            <app-biblioteca-card></app-biblioteca-card>
+            <div *ngFor="let musica of musicas" id="cards-biblioteca">
+            <app-biblioteca-card [musica]="musica"></app-biblioteca-card>
+            </div>
             <div class ="div-butao-adicionar">
                 <button id ="butao-adicionar-arista" href ="+" type="button">+</button>
                 <label for="butao-adicionar-arista">Adicionar artista</label>

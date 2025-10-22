@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Musica } from '../biblioteca-card/Musica';
 
 @Component({
   selector: 'app-biblioteca-card',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './biblioteca-card.component.css'
 })
 export class BibliotecaCardComponent {
-
+  @Input()
+  musica: Musica = {
+    titulo: "",
+    genero: "",
+    imagem: ""
+  }
 }
