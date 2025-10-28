@@ -1,0 +1,47 @@
+.div-principal {
+    background-color: rgb(255, 214, 199);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.div-titulo {
+    display: flex;
+    background-color: darkgoldenrod;
+    width: 100%;
+    border-radius: 1cap;
+}
+
+#Titulo {
+    margin-left: 3vh;
+}
+
+.form-biblioteca {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2.5vh;
+    gap: 0.3vh;
+}
+
+.div-butao-adicionar {
+    display: flex;
+    padding: 0.5vh;
+    font-size: 1.8vh;
+    align-items: center;
+}
+
+.div-butao-adicionar button {
+    height: 5vh;
+    width: 5vh;
+    background-color: rgba(253, 248, 247, 0.925);
+    border-radius: 10cap;
+    border: none;
+    margin-right: 1vh;
+    align-items: center;
+    font-size: 4vh;
+    font-weight: 30;
+}
