@@ -1,0 +1,114 @@
+body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--spotify-dark-gray);
+            color: var(--spotify-white);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: var(--spotify-black);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 90%;
+            width: 500px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Cabeçalho */
+        header h1 {
+            color: var(--spotify-green);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            color: var(--spotify-light-gray);
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        /* Plano */
+        .plan-card {
+            background-color: var(--spotify-dark-gray);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: left;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .plan-card:hover {
+            border: 2px solid var(--spotify-green);
+        }
+
+        .plan-card h2 {
+            color: var(--spotify-green);
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .price span {
+            font-size: 0.5em;
+            font-weight: normal;
+            color: var(--spotify-light-gray);
+        }
+
+        /* Benefícios */
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .benefits ul li {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .benefits ul li::before {
+            content: '✓';
+            color: var(--spotify-green);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Botão */
+        .btn-subscribe {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--spotify-green);
+            color: var(--spotify-black); /* Contraste com o verde */
+            text-decoration: none;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-subscribe:hover {
+            background-color: #1ed760; /* Verde um pouco mais claro */
+            transform: scale(1.02);
+        }
+
+        .btn-subscribe:active {
+            transform: scale(0.98);
+        }

@@ -13,6 +13,6 @@ export class BibliotecaCardComponent {
   musica: Musica = {
     titulo: "",
     genero: "",
-    imagem: ""
+    imagem: './public/image.png'
   }
 }
