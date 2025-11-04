@@ -1,62 +1,86 @@
 .search-container {
-  padding: 1.5rem;
-  background-color: #121212;
-  color: #fff;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+    padding: 1.5rem;
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
+/* Alteração principal: Usar Flexbox para alinhar input e ícone */
 .search-bar {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
+    display: flex; /* Habilita o alinhamento lado a lado */
+    align-items: center; /* Centraliza verticalmente o input e o ícone */
+    gap: 10px; /* Espaço entre o input e o ícone */
+}
 
-  input {
-    width: 100%;
+.search-bar input {
+    /* Ocupa a maior parte do espaço disponível */
+    flex-grow: 1; 
     padding: 0.75rem 1rem;
     font-size: 1rem;
-    border-radius: 4px;
+    border-radius: 500px; /* Mais arredondado, como no Spotify */
     border: none;
     background-color: #242424;
     color: #fff;
+}
 
-    &::placeholder {
-      color: #b3b3b3;
-    }
+.search-bar input::placeholder {
+    color: #b3b3b3;
+}
 
-    &:focus {
-      outline: none;
-      background-color: #2a2a2a;
-    }
-  }
+.search-bar input:focus {
+    outline: none;
+    background-color: #2a2a2a;
+}
+
+/* Estilos para o novo ícone */
+.microphone-icon {
+    font-size: 1.5rem;
+    color: #fff; /* Ícone branco */
+    cursor: pointer;
+    padding: 8px; /* Adiciona uma área de clique maior */
+    border-radius: 50%;
+    transition: color 0.2s;
+}
+
+.microphone-icon:hover {
+    color: #1ed760; /* Fica verde ao passar o mouse */
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
+    display: grid;
+    /* Ajustado para uma coluna de 150px até 1fr no máximo */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
 }
 
 .category-card {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 1rem;
-  height: 100px;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 1rem;
+    height: 100px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    /* Linha abaixo convertida de span { z-index: 2; } para CSS puro: */
+    position: relative; 
 
-  span {
+}
+
+.category-card span {
     z-index: 2;
-  }
+}
 
-  &:hover {
+
+.category-card:hover {
     transform: scale(1.05);
-  }
 }
