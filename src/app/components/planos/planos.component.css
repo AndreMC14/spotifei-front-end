@@ -9,10 +9,11 @@ body {
             align-items: center;
             min-height: 100vh;
             text-align: center;
+            background-color: #121212;
         }
 
         .container {
-            background-color: var(--spotify-black);
+            background-color: white;
             border-radius: 15px;
             padding: 40px;
             max-width: 90%;
@@ -112,3 +113,38 @@ body {
         .btn-subscribe:active {
             transform: scale(0.98);
         }
+
+         .spotifei-header {
+    background-color: #000000;
+    border-bottom: 1px solid #222;
+  }
+
+  
+  .spotifei-nav {
+    margin-right: auto;
+    margin-left: 50px; 
+  }
+
+  .spotifei-link {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+  }
+
+  .spotifei-link:hover {
+    color: #1DB954;
+  }
+
+  .spotifei-btn {
+    background-color: #1DB954;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 25px;
+  }
+
+  .spotifei-btn:hover {
+    background-color: #17a84a;
+  }

@@ -3,7 +3,6 @@ import { MinhaBibliotecaComponent } from './components/minha-biblioteca/minha-bi
 import { LoginComponent } from './components/login/login.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { ExplorarComponent } from './components/explorar/explorar.component';
-import { SearchPageComponent } from './components/search-page/search-page.component'
 import { PlanosComponent } from './components/planos/planos.component'
 
 export const routes: Routes = [
@@ -27,10 +26,7 @@ export const routes: Routes = [
         path: '',
         component: CadastroComponent
     },
-    {
-        path: 'search',
-        component: SearchPageComponent
-    },
+ 
     {
         path: 'planos',
         component: PlanosComponent
