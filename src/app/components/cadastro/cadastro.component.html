@@ -40,13 +40,16 @@
         <input type="password" class="form-control" placeholder="Repita sua senha">
       </div>
 
-      <button type="submit" class="btn w-100" style="background-color:#1DB954; border:none;">
-        Cadastrar
-      </button>
+          <button type="button" 
+        class="btn w-100"
+        style="background-color:#1DB954; border:none; color:white;"
+        (click)="cadastrar()">
+  Cadastrar
+</button>
     </form>
 
     <p class="text-center mt-3">
-      Já tem uma conta? <a href="#" class="text-decoration-none" style="color:#1DB954;">Entrar</a>
+      Já tem uma conta? <a href="login" class="text-decoration-none" style="color:#1DB954;">Entrar</a>
     </p>
   </div>
 </div>

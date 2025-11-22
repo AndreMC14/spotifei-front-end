@@ -8,17 +8,6 @@
     flex-direction: column;
 }
 
-.div-titulo {
-    display: flex;
-    background-color: rgb(47, 196, 2);
-    width: 100%;
-    border-radius: 1cap;
-}
-
-#Titulo {
-    margin-left: 3vh;
-}
-
 .form-biblioteca {
     display: flex;
     flex-direction: column;
@@ -84,3 +73,22 @@
   .spotifei-btn:hover {
     background-color: #17a84a;
   }
+
+  .biblioteca-header {
+    width: 100%;
+    padding: 25px 40px;
+
+    background: linear-gradient(135deg, #1DB954, #15873b);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+}
+
+.biblioteca-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.5px;
+}

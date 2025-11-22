@@ -1,5 +1,6 @@
 export interface Musica{
-    imagem? : string
-    titulo : string
-    genero : string
+    id? : number
+    datapublicacao? : Date
+    descricao : string
+    playlistid : number
 }

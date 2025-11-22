@@ -16,9 +16,10 @@
 </header>
 
 <div class="div-principal">
-    <div class="div-titulo">
-        <h1 id="Titulo">Sua Biblioteca</h1>
-    </div>
+    <div class="biblioteca-header">
+    <h1>Minha Biblioteca</h1>
+</div>
+
         <main class = "form-biblioteca">
             <div *ngFor="let musica of musicas" id="cards-biblioteca">
             <app-biblioteca-card [musica]="musica"></app-biblioteca-card>

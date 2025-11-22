@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BibliotecaCardComponent } from '../minha-biblioteca/biblioteca-card/biblioteca-card.component'
 import { NgFor } from '@angular/common';
 import { Musica } from './biblioteca-card/Musica';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-minha-biblioteca',
@@ -13,11 +14,21 @@ import { Musica } from './biblioteca-card/Musica';
 export class MinhaBibliotecaComponent {
   musicas: Musica[] = [
     {
-      titulo: "Musica bonita",
-      genero: "bunitez"
+      id: 1,
+      descricao: "Billie Jean By Michael Jackson",
+      datapublicacao: new Date('1983-01-02'),
+      playlistid: 1
     },
     {
-      titulo: "Musica feia",
-      genero: "feiez"
+      id: 2,
+      descricao: "Sorry By Justin Bieber",
+      datapublicacao: new Date('2015-10-22'),
+      playlistid: 2
     }]
+     constructor (private http : HttpClient) {}
+
+  ngOnInit(): void {
+    this.http.get<Musica[]>("http://localhost:4200/api/musicas")
+    .subscribe((musicas) => this.musicas = musicas);
+  }
 }

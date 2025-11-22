@@ -11,8 +11,9 @@ import { Musica } from '../biblioteca-card/Musica';
 export class BibliotecaCardComponent {
   @Input()
   musica: Musica = {
-    titulo: "",
-    genero: "",
-    imagem: './public/image.png'
+    id: 0,
+    datapublicacao: new Date(),
+    descricao: "",
+    playlistid: 0
   }
 }
